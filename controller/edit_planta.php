@@ -1,4 +1,7 @@
 <?php
+
+include("../model/conexion.php");
+
 if (!empty($_POST["btnredit"])) {
     if (!empty($_POST["nombre_planta"]) and
         !empty($_POST["genero"]) and
@@ -13,43 +16,70 @@ if (!empty($_POST["btnredit"])) {
         !empty($_POST["municipio"]) and
         !empty($_POST["localidad"])){
            
-        $revisar = getimagesize($_FILES["img_planta"]["tmp_name"]);
 
-            
+           
+            $revisar = getimagesize($_FILES["img_planta"]["tmp_name"]);
 
-            if ($revisar !== false) {
+            if (!empty($_POST["vis"])){
 
-                $imgContenido = addslashes(file_get_contents($_FILES["img_planta"]["tmp_name"]));
-                $nombre_planta=$_POST["nombre_planta"];
-                $genero=$_POST["genero"];
-                $familia=$_POST["familia"];
-                $especie=$_POST["especie"];
-                $autor_especie=$_POST["autor_especie"];
-                $colector_ejemplar=$_POST["colector_ejemplar"];
-                $fecha_colecta=$_POST["fecha_colecta"];
-                $fecha_descripcion=$_POST["fecha_descripcion"];
-                $pais=$_POST["pais"];
-                $estado=$_POST["estado"];
-                $municipio=$_POST["municipio"];
-                $localidad=$_POST["localidad"];
+                if ($revisar !== false) {
+                
+                    $imgContenido = addslashes(file_get_contents($_FILES["img_planta"]["tmp_name"]));
+                    $nombre_planta=$_POST["nombre_planta"];
+                    $genero=$_POST["genero"];
+                    $familia=$_POST["familia"];
+                    $especie=$_POST["especie"];
+                    $autor_especie=$_POST["autor_especie"];
+                    $colector_ejemplar=$_POST["colector_ejemplar"];
+                    $fecha_colecta=$_POST["fecha_colecta"];
+                    $fecha_descripcion=$_POST["fecha_descripcion"];
+                    $pais=$_POST["pais"];
+                    $estado=$_POST["estado"];
+                    $municipio=$_POST["municipio"];
+                    $localidad=$_POST["localidad"];
+        
+				    $sql=$conexion->query(" UPDATE `plants` SET `nombre_comun`='$nombre_planta',`genero`='$genero',`familia`='$familia',`especie`='$especie',`autor_especie`='$autor_especie',`colector_nombre`='$colector_ejemplar',`fecha_colecta`='$fecha_colecta',`fecha_descripcion`='$fecha_descripcion',`pais`='$pais',`estado`='$estado',`municipio`='$municipio',`localidad`='$localidad',`localidad_public`='$localidad',`img_planta`='$imgContenido' WHERE id_planta=$id ");
+				
+                    if($sql==1){
+                        header("location: ../php/registrar_planta.php");
+                    }else{
+                        echo '<div class="alert alert-danger">Error en la carga de datos</div>';
+                    }
     
-                $sql=$conexion->query(" UPDATE `plants` SET `nombre_comun`='$nombre_planta',`genero`='$genero',`familia`='$familia',`especie`='$especie',`autor_especie`='$autor_especie',`colector_nombre`='$colector_ejemplar',`fecha_colecta`='$fecha_colecta',`fecha_descripcion`='$fecha_descripcion',`pais`='$pais',`estado`='$estado',`municipio`='$municipio',`localidad`='$localidad',`img_planta`='$imgContenido' WHERE ID_planta=$id ");
-                if($sql==1){
-                    echo '<div class="alert alert-success">Datos de planta actualizados</div>';
-                    header("location:../php/registro_list.php");
-                }else{
-                    echo '<div class="alert alert-danger">Error en la carga de datos</div>';
+                    } else {
+                        echo '<div class="alert alert-warning">Error de imagen</div>';
+                    }     
+                    } else {
+                        echo '<div class="alert alert-warning">Alguno de los campos esta vacios</div>';
+                    }
                 }
-
-            } else {
-                echo '<div class="alert alert-danger">Error en la actualizacion de datos</div>';
             }
-    } else {
-        echo '<div class="alert alert-warning">Alguno de los campos esta vacio</div>';
-    }
-    
-}
+            if (!empty($_POST["novis"])) {
 
-
-
+                if ($revisar !== false) {
+                
+                    $imgContenido = addslashes(file_get_contents($_FILES["img_planta"]["tmp_name"]));
+                    $nombre_planta=$_POST["nombre_planta"];
+                    $genero=$_POST["genero"];
+                    $familia=$_POST["familia"];
+                    $especie=$_POST["especie"];
+                    $autor_especie=$_POST["autor_especie"];
+                    $colector_ejemplar=$_POST["colector_ejemplar"];
+                    $fecha_colecta=$_POST["fecha_colecta"];
+                    $fecha_descripcion=$_POST["fecha_descripcion"];
+                    $pais=$_POST["pais"];
+                    $estado=$_POST["estado"];
+                    $municipio=$_POST["municipio"];
+                    $localidad=$_POST["localidad"];
+        
+				    $sql=$conexion->query(" UPDATE `plants` SET `nombre_comun`='$nombre_planta',`genero`='$genero',`familia`='$familia',`especie`='$especie',`autor_especie`='$autor_especie',`colector_nombre`='$colector_ejemplar',`fecha_colecta`='$fecha_colecta',`fecha_descripcion`='$fecha_descripcion',`pais`='$pais',`estado`='$estado',`municipio`='$municipio',`localidad`='$localidad',`localidad_public`=' ',`img_planta`='$imgContenido' WHERE ID_planta=$id ");
+				
+                    if($sql==1){
+                        header("location: ../php/registrar_planta.php");
+                    }else{
+                        echo '<div class="alert alert-danger">Error en la carga de datos</div>';
+                    }
+                }     
+            }
+            
 ?>

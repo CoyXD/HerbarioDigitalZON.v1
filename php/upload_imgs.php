@@ -10,19 +10,28 @@ include "../model/conexion.php";
 
 ?>
 
+<!-- Añadir header -->
+<?php  require('../controller/session_header.php'); ?>
+
+<!-- Verificar inicio de sesion-->
+<?php  require('../controller/usuariolog.php'); ?>
 
 
+<div class="container__log">
+    <section class="login_box">
+        <form method="POST" action="../controller/up_img.php" enctype="multipart/form-data">
+            <h2>Subir imagenes a planta</h2>
+            <br>
+            <input type="file" name="imagenes" accept="image/*" multiple>
+            <br>
+            <input type="text" name="id_planta" value="<?php echo $id?>" hidden>
 
-<form method="POST" action="../controller/up_img.php" enctype="multipart/form-data">
-    <input type="text" name="nombre" placeholder="Nombre del archivo"> <br>
-    <input type="file" name="imagenes" accept="image/*" multiple>
-    <br>
-    <input type="text" name="id_planta" value="<?php echo $id?>" hidden>
+            <input type="submit" name="subir" value="enviar" >
 
-    <input type="submit" name="subir" value="enviar" >
-
-    
-</form>
+            
+        </form>
+    </section>
+</div>
 
 
 <div class="galeria">

@@ -39,7 +39,7 @@ while ($row = $sql->fetch_object()){?>
             <h2>Pais: <?= $row->pais?></h2>
             <h2>Estado: <?= $row->estado?></h2>
             <h2>Municipio: <?= $row->municipio?></h2>
-            <h2>Localidad: <?= $row->localidad?></h2>
+            <h2>Localidad: <?= $row->localidad_public?></h2>
         </div>
 
         <div class="galeria">

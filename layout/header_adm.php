@@ -27,10 +27,7 @@
 
             <nav>
                 <ul>
-                    <li><a href="../view/inicio.php"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                    <li><a href="galeria.php"><i class="fa-brands fa-envira"></i>Galeria</a></li>
-                    <li><a href="contacto.php"><i class="fa-solid fa-info"></i>Contacto</a></li>
-                    <li><a href="../php/administrador.php"><i class="fa-solid fa-house"></i>Administracion</a></li>
+                    <li><a href="../php/administrador.php"><i class="fa-solid fa-house"></i>Inicio de Administracion</a></li>
                 </ul>
             </nav>
 
