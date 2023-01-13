@@ -40,7 +40,7 @@ while ($row = $sql->fetch_object()){?>
         </div>
 
     <div class="galeria">
-        <h1>Imagenes subidas:</h1>
+        <h1>Fotos del ejemplar:</h1>
         <br>
 
         <?php

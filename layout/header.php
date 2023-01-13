@@ -19,7 +19,7 @@
     <div class="header-content">
 
         <div class="logo-header">
-            <h1>Herbario Digital<b>ZON</b></h1>
+            <h1>Herbario Digital  <b>ZON</b></h1>
             <img src="../resource/img/icon_herbario.jpg" alt="">
         </div>
 
@@ -28,7 +28,8 @@
             <nav>
                 <ul>
                     <li><a href="inicio.php"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                    <li><a href="galeria.php"><i class="fa-brands fa-envira"></i>Galeria</a></li>
+                    <li><a href="inicio.php"><i class="fa-solid fa-house"></i>¿Quienes somos?</a></li>
+                    <li><a href="galeria.php"><i class="fa-brands fa-envira"></i>Ejemplares</a></li>
                     <li><a href="contacto.php"><i class="fa-solid fa-info"></i>Contacto</a></li>
                 </ul>
             </nav>

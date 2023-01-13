@@ -1,12 +1,6 @@
 <!-- Añadir header -->
 <?php require('../layout/header.php'); ?>
 
-<!-- Efectos de cuadrados moviendose de fondo -->
-<div class="container__background-triangle">
-    <div class="triangle triangle1"></div>
-    <div class="triangle triangle2"></div>
-    <div class="triangle triangle3"></div>
-</div>
 
 
 <!-- Tarjeta en bucle para todos los datos ya registrados -->
@@ -39,12 +33,13 @@
             <h2><?php echo $row['genero'].' '. $row['especie'].' '. $row['familia'] ?></h2>
             <p>Pais: <?php echo $row['pais'] ?></p>
             <p>Estado: <?php echo $row['estado'] ?></p>
+            <p>Municipio: <?php echo $row['municipio'] ?></p>
             <hr>
             <div class="footer__card">
                 <h3 class="user__name">Autor: <?php echo $row['autor_especie'] ?></h3>
                 <i><?php echo $row['fecha_colecta'] ?></i>
             </div>
-            <a href="planta.php?id=<?php echo $row['id_planta']; ?>">Mas informacion</a>
+            <p><a href="planta.php?id=<?php echo $row['id_planta']; ?>">Mas informacion</a></p>
         </div>
         <?php 
         }

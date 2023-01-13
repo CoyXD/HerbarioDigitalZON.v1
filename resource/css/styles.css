@@ -850,6 +850,7 @@ footer .redes-footer .fa-instagram:hover{
     font-weight: 400;
     margin-top: 20px;
     color: #fff;
+    text-shadow: #000000 ;
 }
 
 .card p{
@@ -858,6 +859,7 @@ footer .redes-footer .fa-instagram:hover{
     font-weight: 300;
     color: #fff;
     letter-spacing: 0.5px;
+    text-shadow: #000000 5px;
 }
 
 .card hr{
@@ -902,6 +904,11 @@ footer .redes-footer .fa-instagram:hover{
 .container-plant article h1{
     color: #00ff0d;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-plant article .galeria h1{
+    color: #ffffff;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .container-plant article h2{
@@ -1234,7 +1241,7 @@ footer .redes-footer .fa-instagram:hover{
     color: white;
     text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    background: rgb(43, 255, 0);
+    background: rgb(20, 54, 13);
     display: inline-block;
     box-sizing: border-box;
     opacity:0.8;
