@@ -2,6 +2,8 @@
   <?php  require('../layout/header.php'); ?>
 
 <div class="container-content">
+
+
       <article>
         <h1>Titulo</h1>
 
@@ -17,7 +19,7 @@
 
         <p>La mayoría de los herbarianos están preocupados por preservar sus especímenes correctamente. Toman cursos especiales de capacitación sobre cómo preservar sus especímenes para que se vean perfectos cuando regresen al campo. Preservar las plantas es similar a la preservación de los seres humanos: debe preparar las muestras adecuadamente para evitar daños por condiciones de almacenamiento inadecuadas. También hay un nombre científico para cada condición de almacenamiento, de menor a mayor calidad, esto se llama congelación (-20 grados F), desecación (temperaturas bajo cero) y deshidratación (cero absoluto). La congelación (-20 grados F) es la mejor manera de preservar los especímenes de plantas, ya que conserva toda la integridad estructural de la planta y evita el daño causado por la retención de humedad. La desecación (-18 grados F) preserva la vida de la planta pero daña las partes de la planta más fácilmente que la congelación. La deshidratación (-17 grados F) preserva la vida de las plantas pero las daña más fácilmente que la congelación.</p>
 
-        <img src="resource/img/Zongolica_1.jpg" alt="">
+        <img src="../resource/img/Zongolica_1.jpg" alt="">
 
         <p>Un herbario es un lugar donde las personas almacenan y estudian muestras de varias plantas con fines de investigación. Cualquiera puede convertirse en un maestro de su campo recolectando plantas silvestres y conservándolas en un herbario. ¡Las visitas periódicas a su herbario le permitirán estudiar sus especímenes y aprender cosas nuevas sobre la naturaleza!</p>
       </article>

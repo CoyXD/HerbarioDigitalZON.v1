@@ -401,6 +401,7 @@ body{
 article{
     width: 100%;
     padding: 20px;
+    margin-top: 80px;
     padding-bottom: 80px;
     box-shadow: -10px 0 20px -30px black;
     position: relative;
@@ -444,6 +445,12 @@ article img{
 
 /** Aside - info adicional articulos relacionados **/
 
+.container-aside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .container-aside aside{
    width: 320px;
    box-shadow: 0, 0, 20px -20px black;
@@ -452,6 +459,7 @@ article img{
     margin-left: 40px;
     margin-bottom: 40px;
     padding-bottom: 20px;
+
 
 }
 

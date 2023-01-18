@@ -11,22 +11,27 @@
         </div>
       </div>
 
-
-
-
-    <!-- Slide -->
+          <!-- Slide -->
     <?php  require('../layout/slide.php'); ?>
 
-    <?php require('../layout/aside.php') ?>
-   
+    
+      <div class="container-content">
 
-    <div class="container-icons">
+      <div class="container-icons">
       <div class="icons-plants">
           <a href=""><i class="fa-solid fa-leaf icon-planta"></i></a>
           <a href=""><i class="fa-solid fa-camera icon-planta"></i></a>
           <a href=""><i class="fa-solid fa-circle-chevron-up icon-planta"></i></a>
       </div>
     </div>
+
+      </div>
+
+
+    <?php require('../layout/aside.php') ?>
+   
+
+
 
 
 
