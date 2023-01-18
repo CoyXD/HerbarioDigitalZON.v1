@@ -18,31 +18,34 @@
         {
             $pagina=1;
         }
-
+        
+        
 
         $empieza=($pagina-1) * $por_pagina;
 
             include("../model/conexion.php");
+
+            
             $plantasr = mysqli_query($conexion,"SELECT * FROM plants LIMIT $empieza,$por_pagina");
             while ($row = mysqli_fetch_assoc($plantasr)){
-        ?>
-        <div class="card">
-            <div class="cover__card">
-            <a href="planta.php?id=<?php echo $row['id_planta']; ?>"><img src="data:image/*;base64, <?php echo base64_encode($row['img_planta'])?>" alt="" class="imagen"></a>
-            </div>
-            <h2><?php echo $row['genero'].' '. $row['especie'].' '. $row['familia'] ?></h2>
-            <p>Pais: <?php echo $row['pais'] ?></p>
-            <p>Estado: <?php echo $row['estado'] ?></p>
-            <p>Municipio: <?php echo $row['municipio'] ?></p>
-            <hr>
-            <div class="footer__card">
-                <h3 class="user__name">Autor: <?php echo $row['autor_especie'] ?></h3>
-                <i><?php echo $row['fecha_colecta'] ?></i>
-            </div>
-            <p><a href="planta.php?id=<?php echo $row['id_planta']; ?>">Mas informacion</a></p>
-        </div>
-        <?php 
-        }
+            ?>
+                    <div class="card">
+                        <div class="cover__card">
+                        <a href="planta.php?id=<?php echo $row['id_planta']; ?>"><img src="data:image/*;base64, <?php echo base64_encode($row['img_planta'])?>" alt="" class="imagen"></a>
+                        </div>
+                        <h2><?php echo $row['genero'].' '. $row['especie'].' '. $row['familia'] ?></h2>
+                        <p>Pais: <?php echo $row['pais'] ?></p>
+                        <p>Estado: <?php echo $row['estado'] ?></p>
+                        <p>Municipio: <?php echo $row['municipio'] ?></p>
+                        <hr>
+                        <div class="footer__card">
+                            <h3 class="user__name">Autor: <?php echo $row['autor_especie'] ?></h3>
+                            <i><?php echo $row['fecha_colecta'] ?></i>
+                        </div>
+                        <p><a href="planta.php?id=<?php echo $row['id_planta']; ?>">Mas informacion</a></p>
+                    </div>
+            <?php
+            }
         ?>
 
 <div>

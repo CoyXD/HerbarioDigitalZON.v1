@@ -1,6 +1,8 @@
 <!-- Header - menu -->
 <?php  require('../controller/session_header.php'); ?>
 
+<?php  require('modal/subir_modal.php'); ?>
+
 <section class="form-register-plant">
     <form method="POST" enctype="multipart/form-data" action="../controller/registro_planta.php">
     <h2>Registro de plantas</h2>
@@ -55,7 +57,7 @@
     </div>
 
 
-    <button type="submit" class="btn-primary" name="btnregistrar" value="ok">Registrar</button>
+    <button type="submit" class="btn-primary" name="btnregistrar" value="ok" data-toggle="modal" data-target="#exampleModal">Registrar</button>
     <button type="submit" class="btn-secondary" name="btncancel" value="ok">Cancelar</button>
 
     </form>
