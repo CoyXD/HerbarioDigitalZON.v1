@@ -24,17 +24,21 @@
             <img src="../resource/img/icon_herbario.jpg" alt="">
         </div>
 
-        <div class="menu" id="show-menu">
+        <div class="container__menu">
 
-            <nav>
-                <ul>
-                    <li><a href="../php/administrador.php"><i class="fa-solid fa-house"></i>Inicio de Administracion</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label for="check__menu" id="label__check">
+                    <i class="fas fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="../php/administrador.php" id="selected"></a></li>
+                    </ul>
+                </nav>
+            </div>
 
         </div>
-
-    </div>
 
 
     <div id="icon-menu">
