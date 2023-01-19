@@ -34,15 +34,13 @@
                 <nav>
                     <ul>
                         <li><a href="../php/administrador.php" id="selected"></a></li>
+                        <li><a href="administrador.php">Administrador</a></li>
+                        <li><a href="registrar_planta.php">Agregar ejemplar</a></li>
+                        <li><a href="subirxmlsx.php">Importar de Excel</a></li>
                     </ul>
                 </nav>
             </div>
 
         </div>
-
-
-    <div id="icon-menu">
-        <i class="fa-solid fa-bars"></i>
-    </div>
 
 </header>
