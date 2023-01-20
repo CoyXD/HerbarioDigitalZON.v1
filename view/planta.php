@@ -43,15 +43,17 @@ while ($row = $sql->fetch_object()){?>
         <h1>Fotos del ejemplar:</h1>
         <br>
 
-        <?php
-            $sql = $conexion->query("SELECT *FROM img_plants WHERE id_planta=$id");
 
-            foreach ($sql as $value){
-            ?>
+                <?php
+                    $sql = $conexion->query("SELECT *FROM img_plants WHERE id_planta=$id");
+                    foreach ($sql as $value){
+                    ?>
 
                 <img src="data:image/*;base64, <?php echo base64_encode($value['imgs_plants']); ?>" width="100">
 
         <?php } ?>
+
+
     </div>
     
 
