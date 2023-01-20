@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
     minimum-scale=1.0">
+
+    <!-- TITULO DE LA WEB -->
     <title>Herbario Digital ZON</title>
 
     <!-- Bootstrap core CSS -->
@@ -27,6 +29,9 @@
     <!-- FONT AWESOME JS -->
     <script src="https://kit.fontawesome.com/807a30de48.js" crossorigin="anonymous"></script>
 
+    <!-- ICONO DEL HERBARIO -->
+    <link rel="icon" href="../resource//img//icon_herbario.jpg">
+
 </head>
 <body>
 
@@ -35,12 +40,12 @@
     <div class="header-content">
 
 
-
+        <!-- LOGO EN LA CABECERA DEL MENU -->
         <div class="logo-header">
             <h1>Herbario Digital  <b>ZON</b></h1>
             <img src="../resource/img/icon_herbario.jpg" alt="">
         </div>
-
+        <!-- MENU PRINCIPAL -->
         <div class="container__menu">
 
             <div class="menu">
@@ -56,6 +61,7 @@
                         <li><a href="galeria.php">Ejemplares</a></li>
                         <li><a href="contacto.php">Contacto</a></li>
                     </ul>
+                    <!-- MODO CLARO/OBSCURO -->
                     <div class="modo">
                         <label for="toggle" id="label"><i class="fa-solid fa-moon"></i></label>
                         <input type="checkbox" id="toggle">

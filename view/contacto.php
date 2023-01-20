@@ -16,10 +16,10 @@
 
 <div class="contact-wrapper animated bounceInUp">
     <div class="contact-form">
-        <form action="">
+        <form action="https://formsubmit.co/themastergamer722@gmail.com" method="POST" >
             <p>
                 <label>Nombre completo</label>
-                <input type="text" name="fullname">
+                <input type="text" name="name">
             </p>
             <p>
                 <label>Email</label>
@@ -31,7 +31,7 @@
             </p>
             <p>
                 <label>Asunto</label>
-                <input type="text" name="affair">
+                <input type="text" name="subject">
             </p>
             <p class="block">
                <label>Mensaje</label> 

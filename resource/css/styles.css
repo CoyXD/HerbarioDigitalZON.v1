@@ -1150,6 +1150,16 @@ nav > ul > li > a{
     justify-content: center;
 }
 
+@media screen and (max-width: 800px){
+    .login_box{
+        width: 100%;
+        height: auto;
+        margin-left: -20px;
+    }
+}
+
+
+
 .container__log .login_box{
     width: 320px;
     height: 420px;

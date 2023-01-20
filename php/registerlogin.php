@@ -26,7 +26,7 @@
 
         <input type="submit" value="Log in" name="btnlog">
 
-        <a href="#">No recuerdo mi contraseña</a>
+        <a href="../view/contacto.php">No recuerdo mi contraseña</a>
         </form>
     </div>
 </div>
