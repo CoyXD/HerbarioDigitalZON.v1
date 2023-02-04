@@ -14,7 +14,8 @@ if (!empty($_POST["btnredit"])) {
         !empty($_POST["pais"]) and
         !empty($_POST["estado"]) and
         !empty($_POST["municipio"]) and
-        !empty($_POST["localidad"])){
+        !empty($_POST["localidad"]))
+        {
            
 
            
@@ -41,19 +42,14 @@ if (!empty($_POST["btnredit"])) {
 				    $sql=$conexion->query(" UPDATE `plants` SET `nombre_comun`='$nombre_planta',`genero`='$genero',`familia`='$familia',`especie`='$especie',`autor_especie`='$autor_especie',`colector_nombre`='$colector_ejemplar',`fecha_colecta`='$fecha_colecta',`fecha_descripcion`='$fecha_descripcion',`pais`='$pais',`estado`='$estado',`municipio`='$municipio',`localidad`='$localidad',`localidad_public`='$localidad',`img_planta`='$imgContenido' WHERE id_planta=$id ");
 				
                     if($sql==1){
-                        header("location: ../php/registrar_planta.php");
+                        header("location: ../php/gallery.php");
                     }else{
                         echo '<div class="alert alert-danger">Error en la carga de datos</div>';
                     }
-    
-                    } else {
-                        echo '<div class="alert alert-warning">Error de imagen</div>';
-                    }     
-                    } else {
-                        echo '<div class="alert alert-warning">Alguno de los campos esta vacios</div>';
-                    }
                 }
             }
+
+
             if (!empty($_POST["novis"])) {
 
                 if ($revisar !== false) {
@@ -75,11 +71,12 @@ if (!empty($_POST["btnredit"])) {
 				    $sql=$conexion->query(" UPDATE `plants` SET `nombre_comun`='$nombre_planta',`genero`='$genero',`familia`='$familia',`especie`='$especie',`autor_especie`='$autor_especie',`colector_nombre`='$colector_ejemplar',`fecha_colecta`='$fecha_colecta',`fecha_descripcion`='$fecha_descripcion',`pais`='$pais',`estado`='$estado',`municipio`='$municipio',`localidad`='$localidad',`localidad_public`=' ',`img_planta`='$imgContenido' WHERE ID_planta=$id ");
 				
                     if($sql==1){
-                        header("location: ../php/registrar_planta.php");
+                        header("location: ../php/gallery.php");
                     }else{
                         echo '<div class="alert alert-danger">Error en la carga de datos</div>';
                     }
                 }     
             }
-            
+        }
+}
 ?>

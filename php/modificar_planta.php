@@ -71,7 +71,6 @@ include "../model/conexion.php";
                             <input type="radio" id="green"  name="vis"  value="Visible" class="select"/>
                             <label for="red">No Visible</label>
                             <input type="radio" id="red" name="novis"  value="No Visible" class="select"/>
-                            
                         </div>
 
 

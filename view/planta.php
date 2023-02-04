@@ -45,20 +45,30 @@ while ($row = $sql->fetch_object()){?>
 
 
                 <?php
-                    $sql = $conexion->query("SELECT *FROM img_plants WHERE id_planta=$id");
+                    $sql = $conexion->query("SELECT * FROM img_plants WHERE id_planta=$id");
                     foreach ($sql as $value){
+ 
                     ?>
 
-                <img src="data:image/*;base64, <?php echo base64_encode($value['imgs_plants']); ?>" width="100">
+                    
+                <a href="tumb_img.php?id=<?php echo ($row->id_img); ?>"><img  src="data:image/*;base64, <?php echo base64_encode($value['imgs_plants']); ?>" class="img-thumbnail" alt="..."></a>
 
         <?php } ?>
+        
 
 
     </div>
+
+
+    <? include "carrusel.php"; ?>
     
 
     </article>
+
+
 </div>
+
+
 <?php } ?>
 
 

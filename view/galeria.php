@@ -47,8 +47,7 @@
             <?php
             }
         ?>
-
-<div>
+    <div>
             
             <!--paginacion-->
 

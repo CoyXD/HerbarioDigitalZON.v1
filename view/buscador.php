@@ -3,8 +3,20 @@
 include("../model/conexion.php");
 
 
+$por_pagina=20;
 
-$buscardor = mysqli_query($conexion, "SELECT * FROM plants WHERE nombre_comun  LIKE LOWER('%".$_POST["buscar"]."%') OR especie LIKE LOWER ('%".$_POST["buscar"]."%')" ); 
+if(isset($_GET['pagina']))
+    $pagina=$_GET['pagina'];
+
+else 
+{
+    $pagina=1;
+}
+
+
+$empieza=($pagina-1) * $por_pagina;
+
+$buscardor = mysqli_query($conexion, "SELECT * FROM plants WHERE nombre_comun  LIKE LOWER('%".$_POST["buscar"]."%') OR especie LIKE LOWER ('%".$_POST["buscar"]."%') LIMIT $empieza,$por_pagina" ); 
 $numero = mysqli_num_rows($buscardor); ?>
 
 
@@ -31,3 +43,40 @@ $numero = mysqli_num_rows($buscardor); ?>
         </div>
 </div>
 <?php } ?>
+
+<div>
+            
+            <!--paginacion-->
+
+
+
+            <?php 
+
+
+            $query="SELECT * FROM  plants WHERE nombre_comun  LIKE LOWER('%".$_POST["buscar"]."%') OR especie LIKE LOWER ('%".$_POST["buscar"]."%')";
+            $resultado=mysqli_query($conexion,$query);
+
+
+            $total_registros=mysqli_num_rows($resultado);
+            $total_paginas=ceil($total_registros/$por_pagina);
+
+
+            echo"<center><a class='paginas' href='especimenes.php?pagina=1'>"  .'Primera'. "</a>";
+
+            for($i=1;  $i<=$total_paginas;   $i++)
+
+            {
+
+            echo"<a class='paginas' href='especimenes.php?pagina=".$i."'> ".$i." </a> ";
+
+
+            }
+
+            echo"<a class='paginas' href='especimenes.php?pagina=$total_paginas'>"  .'Ultima'. "</a></center>";
+
+
+
+
+            ?>
+
+        </div>
