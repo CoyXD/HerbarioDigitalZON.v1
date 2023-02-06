@@ -7,14 +7,11 @@ if (!empty($_POST["btnregistrar"])) {
         !empty($_POST["genero"]) and
         !empty($_POST["familia"]) and
         !empty($_POST["especie"]) and
-        !empty($_POST["autor_especie"]) and
-        !empty($_POST["colector_ejemplar"]) and
         !empty($_POST["fecha_colecta"]) and
         !empty($_POST["fecha_descripcion"]) and
         !empty($_POST["pais"]) and
         !empty($_POST["estado"]) and
-        !empty($_POST["municipio"]) and
-        !empty($_POST["localidad"])){
+        !empty($_POST["municipio"])){
            
 
            
@@ -82,7 +79,9 @@ if (!empty($_POST["btnregistrar"])) {
                 }
             }
                 
-            
+            if (!empty($_POST["btncancel"])) {       
+                header("location: ../php/administrador.php");   
+            }
 
 
 ?>

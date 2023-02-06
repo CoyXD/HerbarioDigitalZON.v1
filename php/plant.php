@@ -6,7 +6,7 @@ include "../model/conexion.php";
 
 ?>
 <!-- Header  -->
-<?php require('../layout/header.php'); ?>
+<?php require('../layout/header_adm.php'); ?>
 
 
 <!-- Verificar inicio de sesion-->

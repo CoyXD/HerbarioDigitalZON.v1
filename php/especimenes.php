@@ -1,9 +1,11 @@
 <!-- Añadir header -->
-<?php require('../layout/header.php'); ?>
+<?php require('../layout/header_adm.php'); ?>
 
 <?php include("../model/conexion.php"); ?>
 
-<div class="container__gallery">
+
+
+<div class="search_bar">
     <div class="col-12">
 
         <div class="container__busqueda">
@@ -16,17 +18,12 @@
 
         </div>
         <button  class="btn btn-success" onclick="buscar_ahora($('#buscar').val());">Buscar</button>
-
-        
-            <div>
-                <div id="datos_buscador" class="container-cards"></div>
-            </div>
-        
     </div>
+
 </div>
-
-
-
+<div class="container-cards">
+    <div id="datos_buscador" class="container-cards"></div>
+</div>
 
 
 <script type="text/javascript">

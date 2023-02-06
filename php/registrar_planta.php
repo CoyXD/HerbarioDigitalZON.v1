@@ -1,6 +1,5 @@
 <!-- Header - menu -->
 <?php  require('../controller/session_header.php'); ?>
-
 <?php  require('modal/subir_modal.php'); ?>
 
 <section class="form-register-plant">
@@ -8,37 +7,37 @@
     <h2>Registro de plantas</h2>
     <br>
     <label for="nombre_planta" class="form-label">Nombre de la Planta</label>
-    <input type="text" class="form-control" name="nombre_planta"/>
+    <input type="text" class="form-control" name="nombre_planta" required/>
 
     <label for="genero" class="form-label">Genero</label>
-    <input type="text" class="form-control" name="genero"/>
+    <input type="text" class="form-control" name="genero" required/>
 
     <label for="familia" class="form-label">Familia</label>
-    <input type="text" class="form-control" name="familia"/>
+    <input type="text" class="form-control" name="familia" required/>
 
     <label for="especie" class="form-label">Especie</label>
-    <input type="text" class="form-control" name="especie"/>
+    <input type="text" class="form-control" name="especie" required/>
 
     <label for="autor_especie" class="form-label">Autor especie</label>
-    <input type="text" class="form-control" name="autor_especie"/>
+    <input type="text" class="form-control" name="autor_especie" />
 
     <label for="colector_ejemplar" class="form-label">Colector del ejemplar</label>
-    <input type="text" class="form-control" name="colector_ejemplar"/>
+    <input type="text" class="form-control" name="colector_ejemplar" />
 
     <label for="fecha_colecta" class="form-label">Fecha colecta</label>
-    <input type="date" class="form-control" name="fecha_colecta"/>
+    <input type="date" class="form-control" name="fecha_colecta" required/>
 
     <label for="fecha_descripcion" class="form-label">Fecha descripcion</label>
-    <input type="date" class="form-control" name="fecha_descripcion"/>
+    <input type="date" class="form-control" name="fecha_descripcion" />
 
     <label for="pais" class="form-label">Pais</label>
-    <input type="text" class="form-control" name="pais"/>
+    <input type="text" class="form-control" name="pais" required/>
 
     <label for="estado" class="form-label">Estado</label>
-    <input type="text" class="form-control" name="estado"/>
+    <input type="text" class="form-control" name="estado" required/>
 
     <label for="municipio" class="form-label">Municipio</label>
-    <input type="text" class="form-control" name="municipio"/>
+    <input type="text" class="form-control" name="municipio" required/>
 
     <label for="localidad" class="form-label">Localidad</label>
     <input type="text" class="form-control" name="localidad"/>
@@ -53,7 +52,6 @@
         <input type="radio" id="green"  name="vis"  value="Visible" class="select"/>
         <label for="red">No Visible</label>
         <input type="radio" id="red" name="novis"  value="No Visible" class="select"/>
-        
     </div>
 
 

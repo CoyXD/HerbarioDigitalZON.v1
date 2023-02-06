@@ -59,8 +59,7 @@ while ($row = $sql->fetch_object()){?>
 
     </div>
 
-
-    <? include "carrusel.php"; ?>
+    <button onclick="window.history.back();">Volver atrás</button>
     
 
     </article>

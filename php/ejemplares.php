@@ -5,26 +5,19 @@
 <?php  require('../controller/usuariolog.php'); ?>
 
 
+<div class="search_bar">
 
+<label class="form-label">Palabra a buscar instantaneo</label>
+            <input onkeyup="buscar_ahora($('#buscar_1').val());" type="text" class="form-control" id="buscar_1" name="buscar_1">
+
+</div>
 
 <!-- Tarjeta en bucle para todos los datos ya registrados -->
-    <div class="container-cards">
+<div class="container-cards">
         <?php 
             include("../model/conexion.php");
 
-            $por_pagina=20;
-
-            if(isset($_GET['pagina']))
-                $pagina=$_GET['pagina'];
-
-            else 
-            {
-                $pagina=1;
-            }
-
-
-            $empieza=($pagina-1) * $por_pagina;
-            $plantasr = mysqli_query($conexion,"SELECT * FROM plants LIMIT $empieza,$por_pagina");
+            $plantasr = mysqli_query($conexion,"SELECT * FROM plants");
             while ($row = mysqli_fetch_assoc($plantasr)){
         ?>
             <div class="cardd">
@@ -54,45 +47,20 @@
         <?php 
         }
         ?>
-        <div>
-            
-            <!--paginacion-->
-
-
-
-            <?php 
-
-
-            $query="SELECT * FROM  plants";
-            $resultado=mysqli_query($conexion,$query);
-
-
-            $total_registros=mysqli_num_rows($resultado);
-            $total_paginas=ceil($total_registros/$por_pagina);
-
-
-            echo"<center><a class='paginas' href='gallery.php?pagina=1'>"  .'Primera'. "</a>";
-
-            for($i=1;  $i<=$total_paginas;   $i++)
-
-            {
-
-            echo"<a class='paginas' href='gallery.php?pagina=".$i."'> ".$i." </a> ";
-
-
-            }
-
-            echo"<a class='paginas' href='gallery.php?pagina=$total_paginas'>"  .'Ultima'. "</a></center>";
-
-
-
-
-            ?>
-
-        </div>
 
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

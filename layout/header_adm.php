@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
     minimum-scale=1.0">
+
     <!-- TITULO DE LA WEB -->
     <title>Herbario Digital ZON</title>
 
@@ -14,8 +15,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- importante -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
 
     <!-- GOOGLE FONTs -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -30,8 +33,6 @@
     <link rel="stylesheet" href="resource/css/styles.css">
     <link rel="stylesheet" href="../resource/css/styles.css">
 
-    <!-- FONT AWESOME JS -->
-    <script src="https://kit.fontawesome.com/807a30de48.js" crossorigin="anonymous"></script>
 
     <!-- ICONO DEL HERBARIO -->
     <link rel="icon" href="../resource//img//icon_herbario.jpg">
@@ -59,10 +60,11 @@
                 </label>
                 <nav>
                     <ul>
-                        <li><a href="../php/administrador.php" id="selected"></a></li>
-                        <li><a href="administrador.php">Administrador</a></li>
+                        <li><a href="../php/administrador.php"></a></li>
+                        <li><a href="administrador.php">Inicio</a></li>
+                        <li><a href="especimenes.php">Ejemplares</a></li>
                         <li><a href="registrar_planta.php">Agregar ejemplar</a></li>
-                        <li><a href="subirxmlsx.php">Importar de Excel</a></li>
+                        <li><a href="subirxmlsx.php">Importar</a></li>
                     </ul>
                     <!-- MODO CLARO/OBSCURO -->
                     <div class="modo">

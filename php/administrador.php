@@ -21,15 +21,15 @@
 
   <!-- Perfil -->
 <div class="container-cards">
-  <div class="card">
+  <div class="cardd">
     <div class="cover__card">
-    <a href="user.php"><img src="../resource/img/perfil.png" alt=""></a>
+    <a href="perfil.php"><img src="../resource/img/perfil.png" alt=""></a>
     </div>
     <h2>Perfil</h2>
   </div>
 
   <!-- Registro -->
-  <div class="card">
+  <div class="cardd">
     <div class="cover__card">
     <a href="registrar_planta.php"><img src="../resource/img/3201052.png" alt=""></a>
     </div>
@@ -40,7 +40,7 @@
 
   <!-- Administracion de planta -->
 
-  <div class="card">
+  <div class="cardd">
     <div class="cover__card">
     <a href="gallery.php"><img src="../resource/img/1713277.png" alt=""></a>
     </div>
@@ -50,7 +50,7 @@
 
     <!-- Subir Exel -->
 
-    <div class="card">
+    <div class="cardd">
     <div class="cover__card">
     <a href="subirxmlsx.php"><img src="../resource/img/exel.png" alt=""></a>
     </div>

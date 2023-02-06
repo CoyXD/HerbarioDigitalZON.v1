@@ -29,7 +29,7 @@
             $plantasr = mysqli_query($conexion,"SELECT * FROM plants LIMIT $empieza,$por_pagina");
             while ($row = mysqli_fetch_assoc($plantasr)){
             ?>
-                    <div class="card">
+                    <div class="cardd">
                         <div class="cover__card">
                         <a href="planta.php?id=<?php echo $row['id_planta']; ?>"><img src="data:image/*;base64, <?php echo base64_encode($row['img_planta'])?>" alt="" class="imagen"></a>
                         </div>

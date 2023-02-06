@@ -79,4 +79,10 @@ if (!empty($_POST["btnredit"])) {
             }
         }
 }
+if (!empty($_POST["btnredit"])) {
+    
+    header("location: ../php/gallery.php");
+
+}
+
 ?>

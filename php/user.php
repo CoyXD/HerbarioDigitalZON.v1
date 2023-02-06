@@ -20,7 +20,7 @@ if(isset($_SESSION['usuario'])){
     <?php echo "Correo:".$usuarioingresado; ?>
     <form method="POST" action="config/close_user.php">
 
-        <input type="submit" value="Cerrar sesion" name="btncerrar" />
+        <input type="submit" value="Cerrar sesión" name="btncerrar" />
 
     </form>
   </div>
