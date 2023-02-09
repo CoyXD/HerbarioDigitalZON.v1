@@ -2,7 +2,9 @@
 <?php require('../layout/header.php'); ?>
 
 
-
+<div class="search_bar">
+    <a href="ejemplares.php"><button class="btn btn-success">Busqueda de ejemplares</button></a>
+</div>
 <!-- Tarjeta en bucle para todos los datos ya registrados -->
 
 

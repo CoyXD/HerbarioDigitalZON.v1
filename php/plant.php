@@ -26,7 +26,7 @@ while ($row = $sql->fetch_object()){?>
             <a href="../view/img_full.php?id=<?php echo ($row->id_planta); ?>"><img src="data:image/*;base64, <?php echo base64_encode($row->img_planta)?>"/></a>
         </div>
         <div class="container-info-planta">
-            <h1>Informacion de la planta</h1>
+            <h1>Información de la planta</h1>
             <hr>
             <h2>Nombre: <?= $row->nombre_comun?></h2>
             <h2>Genero: <?= $row->genero?></h2>
@@ -43,7 +43,7 @@ while ($row = $sql->fetch_object()){?>
         </div>
 
         <div class="galeria">
-        <h1>Imagenes subidas:</h1>
+        <h1>Imágenes subidas:</h1>
         <br>
 
         <?php

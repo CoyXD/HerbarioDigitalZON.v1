@@ -4,13 +4,6 @@ include("../model/conexion.php");
 
 if (!empty($_POST["btnredit"])) {
     if (!empty($_POST["nombre_planta"]) and
-        !empty($_POST["genero"]) and
-        !empty($_POST["familia"]) and
-        !empty($_POST["especie"]) and
-        !empty($_POST["autor_especie"]) and
-        !empty($_POST["colector_ejemplar"]) and
-        !empty($_POST["fecha_colecta"]) and
-        !empty($_POST["fecha_descripcion"]) and
         !empty($_POST["pais"]) and
         !empty($_POST["estado"]) and
         !empty($_POST["municipio"]) and
@@ -44,7 +37,7 @@ if (!empty($_POST["btnredit"])) {
                     if($sql==1){
                         header("location: ../php/gallery.php");
                     }else{
-                        echo '<div class="alert alert-danger">Error en la carga de datos</div>';
+                        echo '<div class="alert alert-danger">Error en la carga de datos en apartado visible</div>';
                     }
                 }
             }
@@ -73,13 +66,17 @@ if (!empty($_POST["btnredit"])) {
                     if($sql==1){
                         header("location: ../php/gallery.php");
                     }else{
-                        echo '<div class="alert alert-danger">Error en la carga de datos</div>';
+                        echo '<div class="alert alert-danger">Error en la carga de datos en apartado no visible</div>';
                     }
                 }     
             }
         }
+}else{
+    echo '<div class="alert alert-danger">Campos vacios</div>';
 }
-if (!empty($_POST["btnredit"])) {
+
+
+if (!empty($_POST["btncancel"])) {
     
     header("location: ../php/gallery.php");
 

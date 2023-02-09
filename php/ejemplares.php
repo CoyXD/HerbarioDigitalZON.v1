@@ -4,7 +4,7 @@
 <!-- Verificar inicio de sesion-->
 <?php  require('../controller/usuariolog.php'); ?>
 
-
+<br><br><br><br><br>
 <div class="search_bar">
 
 <label class="form-label">Palabra a buscar instantaneo</label>

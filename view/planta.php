@@ -59,7 +59,7 @@ while ($row = $sql->fetch_object()){?>
 
     </div>
 
-    <button onclick="window.history.back();">Volver atrás</button>
+    <button class="btn btn-secondary" onclick="window.history.back();">Volver atrás</button>
     
 
     </article>

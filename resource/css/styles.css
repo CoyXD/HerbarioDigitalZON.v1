@@ -4,7 +4,11 @@
 
 *{
     text-decoration: none;
-    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
 h4,h3,h2,h1{
@@ -210,13 +214,7 @@ input[id="7"]:checked ~ .pagination .pagination-item[for="7"]{
 
 
 /**Header - cabeza de la pagina **/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-}
+
 
 header{
     position: fixed;
@@ -996,7 +994,7 @@ nav > ul > li > a{
     height: 100%;
     border: solid 4px transparent;
     border-top-color: #047e0a;
-    border-left-color: #000000;
+    border-left-color: #1eff00;
     border-radius: 50%;
     animation: loader 1.4s ease-in-out infinite;
 }
@@ -1009,7 +1007,7 @@ nav > ul > li > a{
     height: 70%;
     border: solid 4px transparent;
     border-top-color: #4ec7ff;
-    border-left-color: #ffffff;
+    border-left-color: #009488;
     border-radius: 50%;
     animation: loader2 1.2s ease-in-out infinite;
 }
@@ -1458,8 +1456,15 @@ nav > ul > li > a{
 
 
    .container__search{
-    margin-top: 80px;
+    background: rgb(20, 54, 13);
+    position: relative;
+    align-items: center;
+    text-align: center;
    }
+
+   .search_bar {
+    margin-top: 85px;
+    }
 
 
 
@@ -1480,7 +1485,7 @@ nav > ul > li > a{
     right: 50px;
     cursor: pointer;
     border: 4px solid transparent;
-    transition: all 300ms ease;
+    transition: all 200ms ease;
     transform: scale(0);
 }
 

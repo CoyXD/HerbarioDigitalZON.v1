@@ -26,7 +26,7 @@ include "../model/conexion.php";
                         <h2>Actualizar Planta</h2>
                         <br>
                         <label for="nombre_planta" class="form-label">Nombre de la Planta</label>
-                        <input type="text" class="form-control" name="nombre_planta" value="<?= $datos->nombre_comun?>"/>
+                        <input type="text" class="form-control" name="nombre_planta" value="<?= $datos->nombre_comun?>" required/>
 
                         <label for="genero" class="form-label">Genero</label>
                         <input type="text" class="form-control" name="genero" value="<?= $datos->genero?>"/>
@@ -50,13 +50,13 @@ include "../model/conexion.php";
                         <input type="date" class="form-control" name="fecha_descripcion" value="<?= $datos->fecha_descripcion?>"/>
 
                         <label for="pais" class="form-label">Pais</label>
-                        <input type="text" class="form-control" name="pais" value="<?= $datos->pais?>"/>
+                        <input type="text" class="form-control" name="pais" value="<?= $datos->pais?>" required/>
 
                         <label for="estado" class="form-label">Estado</label>
-                        <input type="text" class="form-control" name="estado" value="<?= $datos->estado?>"/>
+                        <input type="text" class="form-control" name="estado" value="<?= $datos->estado?>" required/>
 
                         <label for="municipio" class="form-label">Municipio</label>
-                        <input type="text" class="form-control" name="municipio" value="<?= $datos->municipio?>"/>
+                        <input type="text" class="form-control" name="municipio" value="<?= $datos->municipio?>" required/>
 
                         <label for="localidad" class="form-label">Localidad</label>
                         <input type="text" class="form-control" name="localidad" value="<?= $datos->localidad?>"/>

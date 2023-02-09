@@ -1,14 +1,8 @@
 <!-- Añadir header -->
-<?php  require('../controller/session_header.php'); ?>
-
-<!-- Verificar inicio de sesion-->
-<?php  require('../controller/usuariolog.php'); ?>
-
-
+<?php require('../layout/header.php'); ?>
 <!-- Barra de busqueda -->
 <div class="search_bar">
     <div class="col-12">
-
         <div class="container__busqueda">
 
             <!-- <label class="form-label">Palabra a buscar</label> -->
@@ -19,15 +13,13 @@
 
         </div>
         <button  class="btn btn-success" onclick="buscar_ahora($('#buscar').val());">Refrescar</button>
-        <a href="gallery.php"><button class="btn btn-success">Ver todos los ejemplares</button></a>
+        <a href="galeria.php"><button class="btn btn-success">Ver ejemplares por página</button></a>
     </div>
 </div>
-
 <!-- Resultados de busqueda -->
 <div class="container-cards">
     <div id="datos_buscador" class="container-cards"></div>
 </div>
-
 
 <!-- script de busqueda -->
 <script type="text/javascript">
@@ -45,7 +37,5 @@
      //   buscar_ahora();
 </script>
 
-
 <!-- Añadir footer -->
-
 <?php require('../layout/footer.php'); ?>

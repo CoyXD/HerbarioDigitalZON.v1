@@ -32,7 +32,7 @@
                     <a href="plant.php?id=<?php echo $row['id_planta']; ?>"><img src="data:image/*;base64, <?php echo base64_encode($row['img_planta'])?>" alt="" class="imagen"></a>
                 </div>
                 <h2><?php echo $row['genero'].' '. $row['especie'].' '. $row['familia'] ?></h2>
-                <p>Pais: <?php echo $row['pais'] ?></p>
+                <p>País: <?php echo $row['pais'] ?></p>
                 <p>Estado: <?php echo $row['estado'] ?></p>
                 <p>Municipio: <?php echo $row['municipio'] ?></p>
                 <p>Localidad: <?php echo $row['localidad'] ?></p>
@@ -41,7 +41,7 @@
                     <h3 class="user__name">Autor: <?php echo $row['autor_especie'] ?></h3>
                     <i><?php echo $row['fecha_colecta'] ?></i>
                 </div>
-                <a href="plant.php?id=<?php echo $row['id_planta']; ?>">Mas informacion</a>
+                <a href="plant.php?id=<?php echo $row['id_planta']; ?>">Mas información</a>
                 <div>
                 <a href="modificar_planta.php?id='<?php echo $row['id_planta']; ?>'" class="btn btn-small btn-warning"><i class="fa-solid fa-pen"></i></a>
                 <a href="../controller/eliminar_planta.php?id='<?php echo $row['id_planta']; ?>'" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>

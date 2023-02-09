@@ -26,6 +26,12 @@ $numero = mysqli_num_rows($buscardor); ?>
                 <h3 class="user__name">Autor: <?php echo $resultado['autor_especie'] ?></h3>
                 <i><?php echo $resultado['fecha_colecta'] ?></i>
             </div>
-            <p><a href="plant.php?id=<?php echo $resultado['id_planta']; ?>">Mas informacion</a></p>
-        </div>
+                <p><a href="plant.php?id=<?php echo $resultado['id_planta']; ?>">Mas informacion</a></p>
+                <div>
+                    <a href="modificar_planta.php?id='<?php echo $row['id_planta']; ?>'" class="btn btn-small btn-warning"><i class="fa-solid fa-pen"></i></a>
+                    <a href="../controller/eliminar_planta.php?id='<?php echo $row['id_planta']; ?>'" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
+                    <a href="upload_imgs.php?id=<?php echo $row['id_planta']; ?>" class="btn btn-small btn-dark"><i class="fa-solid fa-image"></i></a>
+                </div>
+            </div>
+
 <?php } ?>
